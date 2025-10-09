@@ -1,0 +1,45 @@
+# --- Dependências principais do app ---
+streamlit
+streamlit-option-menu==0.4.0
+pandas
+matplotlib
+seaborn==0.13.2
+scikit-learn==1.7.2
+scipy
+dask
+fastparquet==2024.11.0
+
+# --- LangChain e LLMs ---
+langchain-chroma==0.2.6
+langchain-experimental==0.3.4
+langchain-google-genai==2.0.10
+langchain-groq==0.3.8
+langchain-mcp-adapters==0.0.9
+langchain-openai==0.3.33
+langgraph==0.6.8
+
+# --- Outras libs úteis / suporte ---
+appdirs==1.4.4
+bokeh==3.8.0
+brotli==1.1.0
+cffi==2.0.0
+cssselect2==0.8.0
+defusedxml==0.7.1
+distributed==2025.9.1
+fastmcp==2.2.6
+grandalf==0.8
+graphviz==0.21
+grpcio-status==1.71.2
+httptools==0.6.4
+lz4==4.4.4
+numexpr==2.13.1
+patsy==1.0.1
+pydot==4.0.1
+pydyf==0.11.0
+pyee==11.1.1
+pyphen==0.17.2
+tabulate==0.9.0
+tinyhtml5==2.0.0
+uvloop==0.21.0
+watchfiles==1.1.0
+zopfli==0.2.3.post1
