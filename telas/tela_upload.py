@@ -17,6 +17,7 @@ def detectar_separador(caminho_arquivo):
     return ",", "utf-8"  # fallback padrão
 
 def render():
+    st.warning("⚠️ **ATENÇÃO:** Esta aplicação não foi testada amplamente em nuvem. Recomenda-se rodar localmente para maior estabilidade.")
     st.header("📤 Upload de Arquivo CSV")
 
     uploaded_file = st.file_uploader("Selecione um arquivo CSV", type=["csv"])
