@@ -1286,11 +1286,19 @@ def feature_importance_analyzer(
     valid_features = [f for f in features if f in df.columns and pd.api.types.is_numeric_dtype(df[f])]
     if not valid_features:
         return json.dumps({"mensagem": "Nenhuma variável numérica válida encontrada entre as features.", "status": "error"})
-
-    X = df[valid_features].dropna()
-    y = df.loc[X.index, target].dropna()
-    X = X.loc[y.index]
-
+        
+    # Código gerando err oem alguns casos:
+    # X = df[valid_features].dropna()
+    # y = df.loc[X.index, target].dropna()
+    # X = X.loc[y.index]
+    # Alternativa:
+    
+    # --------------
+    df = df.dropna(subset=valid_features + [target])
+    X = df[valid_features]
+    y = df[target]
+    # --------------
+    
     if method == "linear":
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
