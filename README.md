@@ -49,7 +49,7 @@ O DataWizard é um agente inteligente desenvolvido com LangChain e Streamlit, ca
 
 ## 🛠️ Requisitos para rodar localmente
 
-- Python 3.10+
+- Python 3.11+
 - Instale as dependências:
   ```bash
   pip install -r requirements.txt
